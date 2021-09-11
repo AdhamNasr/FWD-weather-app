@@ -112,9 +112,9 @@ Included in the async function to retrieve that app’s data on the client side,
     - [x] Express
     - [x] Body-Parser
     - [x] Cors
-- [ ] Update server.js
-    - [ ] Create a server
-    - [ ] Test server using the console
+- [x] Update server.js
+    - [x] Create a server
+    - [x] Test server using the console
 - [ ] Add a GET route that returns the projectData object in the server code Then, add a POST route that adds incoming data to projectData.
     - [ ] POST route should anticipate receiving three pieces of data from the request body
         - [ ] temperature
