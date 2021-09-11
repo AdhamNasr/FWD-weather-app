@@ -20,19 +20,19 @@ Although writing everything from scratch isn't the easy path, and will be challe
 
 The main goal of the project is to create an asynchronous web app that uses a Web API and user data to dynamically update the UI. The following are the requirements to pass the project.
 
-### Project Environment
+### Project Environment Setup
 
 #### **Node and Express Environment**: 
 
-Node and Express should be installed on the local machine. The project file server.js should require express(), and should create an instance of their app using express.
+Node and Express should be installed on the local machine. The project file `server.js` should require `express()`, and should create an instance of their app using express.
 
-The Express app instance should be pointed to the project folder with .html, .css, and .js files.
+The Express app instance should be pointed to the project folder with `.html`, `.css`, and `.js` files.
 
 #### **Project Dependencies**: 
 
-The ‘cors’ package should be installed in the project from the command line, required in the project file server.js, and the instance of the app should be setup to use cors().
+The `cors` package should be installed in the project from the command line, required in the project file `server.js`, and the instance of the app should be setup to use `cors()`.
 
-The body-parser package should be installed and included in the project.
+The `body-parser` package should be installed and included in the project.
 
 #### **Local Server**: 
 
@@ -46,13 +46,13 @@ Create API credentials on OpenWeatherMap.com
 
 #### **APP API Endpoint**:
 
-There should be a JavaScript Object named projectData initiated in the file server.js to act as the app API endpoint.
+There should be a JavaScript Object named `projectData` initiated in the file `server.js` to act as the app API endpoint.
 
 #### **Integrating OpenWeatherMap API**:
 
-The personal API Key for OpenWeatherMap API is saved in a named const variable.
+The personal API Key for OpenWeatherMap API is saved in a named `const` variable.
 
-The API Key variable is passed as a parameter to fetch() .
+The API Key variable is passed as a parameter to `fetch()`.
 
 Data is successfully returned from the external API.
 
@@ -78,48 +78,48 @@ The server side function should create a new entry in the apps endpoint (the nam
 
 #### **Naming HTML Inputs and Buttons For Interaction**:
 
-The input element with the placeholder property set to “enter zip code here” should have an id of zip.
+The `input` element with the `placeholder` property set to “enter zip code here” should have an `id` of `zip`.
 
-The textarea included in project HTML should have an id of feelings.
+The `textarea` included in project HTML should have an `id` of `feelings`.
 
-The button included in project HTML should have an id of generate.
+The button included in project HTML should have an `id` of `generate`.
 
 #### **Assigning Element Properties Dynamically**:
 
 The div with the id, entryHolder should have three child divs with the ids:
 
-- date
-- temp
-- content
+- `date`
+- `temp`
+- `content`
 
 #### **Event Listeners**:
 
 Adds an event listener to an existing HTML button from DOM using Vanilla JS.
 
-In the file app.js, the element with the id of generate should have an addEventListener() method called on it, with click as the first parameter, and a named callback function as the second parameter.
+In the file `app.js`, the element with the `id` of `generate` should have an `addEventListener()` method called on it, with `click` as the first parameter, and a named callback function as the second parameter.
 
 #### **Dynamically Update UI**:
 
 Sets the properties of existing HTML elements from the DOM using Vanilla JavaScript.
 
-Included in the async function to retrieve that app’s data on the client side, existing DOM elements should have their innerHTML properties dynamically set according to data returned by the app route.
+Included in the async function to retrieve that app’s data on the client side, existing DOM elements should have their `innerHTML` properties dynamically set according to data returned by the app route.
 
 ## To-Do
 
 - [x] Create initial files and folder structure
-- [ ] Write ReadMe.md and upload initial commit
-- [ ] Setup Node environment:
-    - [ ] Express
-    - [ ] Body-Parser
-    - [ ] Cors
+- [x] Write ReadMe.md and upload initial commit
+- [x] Setup Node environment:
+    - [x] Express
+    - [x] Body-Parser
+    - [x] Cors
 - [ ] Update server.js
     - [ ] Create a server
     - [ ] Test server using the console
 - [ ] Add a GET route that returns the projectData object in the server code Then, add a POST route that adds incoming data to projectData.
     - [ ] POST route should anticipate receiving three pieces of data from the request body
-        - [ ]temperature
-        - [ ]date
-        - [ ]user response
+        - [ ] temperature
+        - [ ] date
+        - [ ] user response
     - [ ] Make sure POST route is setup to add each of these values with a key to projectData.
 - [ ] Acquire API credentials from OpenWeatherMap website. Use credentials and the base url to create global variables at the top of app.js code.
     - [ ] Write an async function in app.js that uses fetch() to make a GET request to the OpenWeatherMap API.
