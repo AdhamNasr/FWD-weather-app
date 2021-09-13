@@ -1,5 +1,6 @@
 h1{
-    font-size: 35px;
+    font-size: 50px;
+    text-align: center;
 }
 
 body{
@@ -7,39 +8,100 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-#weatherapp{
-    display: grid;
-    grid-auto-rows: minmax(60px, auto);
-    color: black;
-    justify-content: center;
-    grid-gap: 1em;
+
+input{
+    display: block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
-}
-
-.holder{
-    text-align: center;
-    font-size: 25px;
-}
-
-.zipcode{
-    display: grid;
-    justify-items: center;
-}
-
-.feeling{
-    display: grid;
-    justify-items: center;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 button{
     width: 250px;
     height: 50px;
     margin-top: 10px;
-    background: #7181a5;
-    color: #424242;
+    background: #7e95ca;
+    color: #2b2b2b;
     font-size: 26px;
     font-family: 'Oswald', sans-serif;
-    border: 5px;
+    border-color: #83939c;
     box-shadow: 2px 4px 5px rgb(62, 75, 116);
+}
+
+textarea{
+    margin-top: 20px;
+    display: block;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+#app{
+    display: grid;
+    grid-auto-rows: minmax(auto, auto);
+    justify-content: center;
+    grid-gap: 1em;
+    font-family: 'Oswald', sans-serif;
+}
+
+#entryHolder{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+#date{
+    font-size: 16px;
+}
+
+#temp{
+    font-size: 16px;
+}
+
+#content{
+    font-size: 16px;
+}
+
+.headline {
+
+}
+
+.holder{
+    font-size: 25px;
+}
+
+.zip{
+    height: inherit;
+    width: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.feel{
+    height: inherit;
+    width: auto;
+    display: grid;
+    justify-items: center;
+}
+
+.title{
+    text-align: center;
+    height: inherit;
+    width: auto;
+}
+
+.entry{
+    display: grid;
+    grid-auto-rows: inherit;
+    width: auto;
+    height: max-content;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    
 }

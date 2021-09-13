@@ -1,10 +1,10 @@
 // Empty JS object to act as endpoint for all routes
 
 projectData = {};
-const port = 8000
 
 // Require Express to run server and routes
 
+const port = 8000
 const express = require("express")
 const cors = require("cors")
 const bodyParser = require("body-parser")
@@ -32,4 +32,15 @@ app.use(express.static('website'));
 
 app.listen(port, () => {
     console.log(`Server initiated on port: ${port}`)
+})
+
+app.get("/storedData", (req, res) => {
+    res.send(projectData)
+})
+
+app.post("/currentData", (req, res) => {
+    projectData.temp = req.body.temp
+    projectData.date = req.body.date
+    projectData.feelings = req.body.feelings
+    res.end()
 })
