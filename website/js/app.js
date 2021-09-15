@@ -16,7 +16,7 @@ generate.addEventListener("click", async () => {
     const userZipcode = zipCode.value
     let userFeeling = feelings.value;
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${userZipcode}&appid=${apiKey}`
+    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${userZipcode}&appid=${apiKey}&units=metric`
 
     const res = await fetch(url)
     let data = await res.json()
